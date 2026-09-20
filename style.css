@@ -1,0 +1,96 @@
+.banner {
+    width: 100%;
+    min-height: 280px;
+    background: #17150f;
+    padding-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px 0;
+}
+
+.logo {
+    color: #F4BE1E;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.navlinks {
+    display: flex;
+    gap: 24px;
+}
+
+.navlinks a {
+    color: #f7f1e1;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.phone {
+    position:absolute;
+    width: 130px;
+    height: 240px;
+    object-fit: contain;
+}
+
+.phones {
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+
+.phone-1 {
+    left: 40px;
+    top: 10px;
+}
+
+.phone-2 {
+    left: 100px;
+    top: 0px;
+}
+
+.copy {
+    max-width: 380px;
+
+}
+
+.copy h1 {
+    color: #F4BE1E;
+    font-size: 32px;
+    line-height: 1.15;
+    margin: 0 0 10px;
+
+}
+
+.copy p {
+    color: #f7f1e1;
+    font-size: 15px;
+    opacity: 0.8;
+    margin: 0;
+
+}
+
+@media (max-width: 700px) {
+    .navlinks {display: none;}
+    .hero {justify-content: center; text-align: center;}
+    .copy h1 {font-size: 26px;}
+}
+
+.products {
+    background : #17150f;
+    padding: 60px 40px
+}
