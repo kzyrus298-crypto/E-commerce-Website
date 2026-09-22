@@ -12,3 +12,9 @@ window.addEventListener('scroll', function() {
 document.addEventListener('click', function(){
     document.getElementById('bgMusic').play();
 }, {once: true}) ;
+
+document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            alert("Hala bakit?");
+        }
+    });
