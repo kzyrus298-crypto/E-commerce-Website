@@ -2,108 +2,368 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <meta http-equiv="refresh" content="3">
+ 
         <link rel="icon" type="image/png" href="Images/banana_favicon_96_vertical.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="style.css">
-        <title>Banana</title>
+        <title>Banana | Premium Unlocked Phones</title>
     </head>
-    <body>
+   
+    <body id="top">
 
+        
+        <div class="boards_ngani">
+            <div class="ticker-track">
+                <span>✦ Get 3 months of Apple One free with any new iPhone</span>
+                <span>✦ 100% Authentic Factory Unlocked Units</span>
+                <span>✦ Press 'Y' on your keyboard for a secret surprise!</span>
+                <span>✦ Nationwide Delivery with Tracking</span>
+                <!-- Duplicate for infinite smooth loop -->
+                <span>✦ Get 3 months of Apple One free with any new iPhone</span>
+                <span>✦ 100% Authentic Factory Unlocked Units</span>
+                <span>✦ Press 'Y' on your keyboard for a secret surprise!</span>
+                <span>✦ Nationwide Delivery with Tracking</span>
+            </div>
+        </div>
+
+        
         <nav class="top-nav">
             <div class="logo">
-                <ruby> Banana 
+                <ruby class="banana-logo"> Banana 
                     <rt>バナナ</rt> 
                 </ruby>
             </div>
             <div class="navlinks">
-                <a href="#">Orders</a>
-                <a href="#">Accessories</a>
-                <a href="#">Support</a>
-                <a href="mailto:kzyrus298@gmail.com">Email Us</a>
+                <a href="#products">Phones</a>
+                <a href="#calculator">Order Now</a>
+                <a href="#compare">Compare</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQ</a>
+                
+                <button type="button" class="btn-pdf-link" id="openPdfBtn">📄 Warranty PDF</button>
+                
+                <a href="#bottom" class="anchor-link">Go to Bottom ↓</a>
+            </div>
+            <div class="nav-actions">
+                
+                <button class="cart-pill" id="cartBtn" type="button" title="View Cart">
+                    <span class="cart-icon">🛍️</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
             </div>
         </nav>
 
+        
         <div class="hero-video">
             <video autoplay muted loop playsinline>
                 <source src="Videos/4c847b28-3440-4d29-a02b-79b06e06fa0f.mp4" type="video/mp4">
             </video>
+            <div class="video-overlay"></div>
         </div>
-        
-
-        <div class="boards_ngani">
-            <marquee>✦ 48MP MAIN CAMERA
-✦ SUPER RETINA DISPLAY
-✦ ALL-DAY BATTERY
-✦ A17 PRO CHIP
-✦ 5G CONNECTIVITY
-✦ USB-C
-✦ FACE ID
-✦ CERAMIC SHIELD
-✦ IP68 WATER RESISTANCE
-✦ PRO CAMERA SYSTEM</marquee>
-
-         </div>
 
         
-
         <div class="banner">
             <div class="hero">
                 <div class="copy">
+                    <span class="tag-pill">Official 2026 Collection</span>
+                    
                     <h1>Great Phones, ripe for the picking.</h1>
-                    <p>Authentic units, unlocked, ready to ship.</p>
+                    
+                    <p><em>Authentic units</em>, <strong>factory unlocked</strong>, and ready to ship straight to your door.</p>
+                    <div class="hero-buttons">
+                        
+                        <a href="#products" class="btn-primary">Explore Units</a>
+                        <button type="button" class="btn-secondary" id="revealVoucherBtn">✨ Reveal Voucher</button>
+                    </div>
+
+                    
+                    <div class="reveal-box" id="voucherBox">
+                        🎁 <strong>SECRET VOUCHER REVEALED:</strong> Use code <mark>BANANA1000</mark> for ₱1,000 OFF!
+                    </div>
                 </div>
 
+                
                 <div class="phones">
-                    <img src="Images/front.png" class="phone phone-1" alt="Iphone">
-                    <img src="Images/back.png" class="phone phone-2" alt="Iphone">
+                    
+                    <img src="Images/front.png" class="phone phone-1" alt="iPhone Front View" usemap="#phonemap">
+                    <img src="Images/back.png" class="phone phone-2" alt="iPhone Back View">
+
+                    
+                    <map name="phonemap">
+                        <area shape="rect" coords="0,0,140,260" href="#products" alt="Shop iPhone Front View" title="Click to view iPhone 16">
+                    </map>
                 </div>
             </div>
         </div>
 
-        <section class="products">
-            <h2>Phones</h2>
+        
+        <hr class="section-divider">
+
+        
+        <section class="products" id="products">
+            <div class="section-header">
+                
+                <h2>Featured Phones</h2>
+                <p>Selected flagship devices in pristine condition.</p>
+            </div>
+
             <div class="product-grid">
 
-                <div class="product-card">
-                    <img src="Images/IPHONE16.png" alt="Iphone 16" class="product-img" data-product="iphone16">
-                    <h3>Iphone 16</h3>
-
-                    <div class="color-swatches" data-product="iphone16">
-                        <span class="swatch" style="background: #000000" data-img="Images/black.png" data-color="Black"></span>
-                        <span class="swatch" style="background: #0000FF" data-img="Images/IPHONE16.png" data-color="BLue"></span>
-                        <span class="swatch" style="background: #FF0000" data-img="Images/pula.png" data-color="Red"></span>
-                    </div>
-
-                    <div class="price-container">
-                        <span class="old-price">₱14,999</span>
-                        <span class="new-price">₱13,999</span>
-                    </div>
-                    <button> Add to Cart </button>
-
-
-                </div>
                 
                 <div class="product-card">
-                    <img src="Images/iphone15.png" alt="Iphone 15" class="product-img" data-product="iphone15">
-                    <h3>Iphone 15</h3>
+                    <span class="card-badge">Save ₱1,000</span>
+                    <div class="img-wrap">
+                        <img src="Images/IPHONE16.png" alt="iPhone 16" class="product-img" data-product="iphone16">
+                    </div>
+                    
+                    <h3>iPhone 16</h3>
+
+                    <p class="color-indicator">Color: <strong class="color-name">Blue</strong></p>
+
+                    <div class="color-swatches" data-product="iphone16">
+                        <span class="swatch" style="background: #1c1c1e" data-img="Images/black.png" data-color="Black" title="Black"></span>
+                        <span class="swatch selected" style="background: #3b5998" data-img="Images/IPHONE16.png" data-color="Blue" title="Blue"></span>
+                        <span class="swatch" style="background: #d32f2f" data-img="Images/pula.png" data-color="Red" title="Red"></span>
+                    </div>
+
+                    
+                    <div class="price-container">
+                        <span class="old-price"><del>₱14,999</del></span>
+                        <span class="new-price"><ins>₱13,999</ins></span>
+                    </div>
+                    <button class="add-cart-btn" type="button">Add to Cart</button>
+                </div>
+                
+                
+                <div class="product-card">
+                    <span class="card-badge">Best Seller</span>
+                    <div class="img-wrap">
+                        <img src="Images/iphone15.png" alt="iPhone 15" class="product-img" data-product="iphone15">
+                    </div>
+                    
+                    <h3>iPhone 15</h3>
+
+                    <p class="color-indicator">Color: <strong class="color-name">Pink</strong></p>
 
                     <div class="color-swatches" data-product="iphone15">
-                        <span class="swatch" style="background: #ece6e6" data-img="Images/white.png" data-color="Black"></span>
-                        <span class="swatch" style="background: #FFC0CB" data-img="Images/iphone15.png" data-color="Black"></span>
-                        <span class="swatch" style="background: #E67300" data-img="Images/orange.png" data-color="Black"></span>
+                        <span class="swatch" style="background: #f0eee9" data-img="Images/white.png" data-color="White" title="White"></span>
+                        <span class="swatch selected" style="background: #f4c2c2" data-img="Images/iphone15.png" data-color="Pink" title="Pink"></span>
+                        <span class="swatch" style="background: #e67300" data-img="Images/orange.png" data-color="Orange" title="Orange"></span>
                     </div>
 
+                    
                     <div class="price-container">
-                        <span class="old-price">₱13,999</span>
-                        <span class="new-price">₱13,998</span>
+                        <span class="old-price"><del>₱13,999</del></span>
+                        <span class="new-price"><ins>₱12,999</ins></span>
                     </div>
-                    <button> Add to cart </button>
+                    <button class="add-cart-btn" type="button">Add to Cart</button>
                 </div>
 
             </div>
+
+            
+            <div class="pre-container">
+                <h4>Diagnostic Inspection Sheet</h4>
+                <pre class="specs-pre">
+===================================================
+BANANA CERTIFIED QUALITY CHECK — HARDWARE AUDIT
+===================================================
+DEVICE ID    : BNA-2026-X01
+BATTERY COND : 100% Peak Capacity Guaranteed
+NETWORK SIM  : Unlocked / Dual-eSIM + Physical SIM
+WATER RESIST : IP68 Certified Submersion Safe
+ACCESSORIES  : Braided Type-C Fast Cable Included
+===================================================</pre>
+            </div>
         </section>
 
+        
+        <hr class="section-divider">
+
+       
+        <section class="compare-section" id="compare">
+            <div class="section-header">
+                <h2>Model Comparison Matrix</h2>
+                <p>Complete breakdown of specs and price tiering.</p>
+            </div>
+            <div class="table-wrapper">
+                <table class="specs-table">
+                    <thead>
+                        <tr>
+                            
+                            <th colspan="4" class="table-banner-th">Official Banana Specifications Comparison</th>
+                        </tr>
+                        <tr>
+                            <th>Specification</th>
+                            <th>iPhone 16</th>
+                            <th>iPhone 15</th>
+                            <th>Warranty Coverage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Processor</strong></td>
+                            <td>A18 Bionic Chip (3nm)</td>
+                            <td>A16 Bionic Chip (4nm)</td>
+                            <td>1 Year Service</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Main Camera</strong></td>
+                            <td>48MP Fusion Camera</td>
+                            <td>48MP Main Camera</td>
+                            <td>Sensors Covered</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Display</strong></td>
+                            <td>Super Retina XDR OLED</td>
+                            <td>Super Retina XDR OLED</td>
+                            <td>Zero-Dead Pixel Guarantee</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Price</strong></td>
+                            <td>₱13,999</td>
+                            <td>₱12,999</td>
+                            <td>Free Returns in 7 Days</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            
+                            <td colspan="3"><strong>Total Average Savings vs Brand New Retail:</strong></td>
+                            <td><strong>₱8,000+</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        
+        <hr class="section-divider">
+
+        
+        <section class="calculator-section" id="calculator">
+            <div class="section-header">
+                <h2>Quick Order & Total Calculator</h2>
+                <p>Configure your phone order, compute live total, and upload payment details.</p>
+            </div>
+
+            <form class="order-box" id="calcForm">
+                <div class="form-grid">
+                    
+                    
+                    <div class="form-group">
+                        <label for="modelSelect">Select iPhone Model:</label>
+                        <select id="modelSelect" class="form-control">
+                            <optgroup label="iPhone 16 Series">
+                                <option value="13999" selected>iPhone 16 Standard (₱13,999)</option>
+                                <option value="16999">iPhone 16 Pro 256GB (₱16,999)</option>
+                            </optgroup>
+                            <optgroup label="iPhone 15 Series">
+                                <option value="12999">iPhone 15 Standard (₱12,999)</option>
+                                <option value="14999">iPhone 15 Plus (₱14,999)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="qtyInput">Quantity:</label>
+                        <input type="number" id="qtyInput" class="form-control" value="1" min="1" max="10">
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="branchInput">Nearest Pick-up Branch:</label>
+                        <input list="branches" id="branchInput" class="form-control" placeholder="Type or select branch...">
+                        <datalist id="branches">
+                            <option value="Calamba Main Hub (Laguna)">
+                            <option value="SM Mall of Asia (Pasay)">
+                            <option value="BGC Taguig Branch">
+                            <option value="Cebu IT Park Hub">
+                            <option value="Davao City Center">
+                        </datalist>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="paymentReceipt">Upload Proof of Payment (GCash/Maya):</label>
+                        <input type="file" id="paymentReceipt" class="form-control file-input" accept="image/*,.pdf">
+                    </div>
+                </div>
+
+                
+                <div class="checkbox-group">
+                    <label class="check-item">
+                        <input type="checkbox" id="warrantyCheck">
+                        Add BananaCare+ Extended Warranty (+₱999)
+                    </label>
+                    <label class="check-item">
+                        <input type="checkbox" id="caseCheck" checked>
+                        Free Matte Protective Case & Tempered Glass (₱0)
+                    </label>
+                    <label class="check-item">
+                        <input type="checkbox" id="termsCheck" required>
+                        I agree to the Store Warranty & Shipping Terms
+                    </label>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="orderNotes">Special Delivery Instructions / Landmark:</label>
+                    <textarea id="orderNotes" class="form-control" rows="3" placeholder="e.g. Near Brgy Hall, call upon arrival..."></textarea>
+                </div>
+
+                
+                <div class="calc-summary">
+                    <div class="calc-display">
+                        <span>Total Price (Live Computation):</span>
+                        <strong id="computedTotal">₱13,999</strong>
+                    </div>
+                    <button type="button" class="btn-primary" id="computeBtn">Recalculate Total</button>
+                </div>
+            </form>
+        </section>
+
+        
+        <hr class="section-divider">
+
+        
+        <section class="reviews-section" id="reviews">
+            <div class="section-header">
+                <h2>Verified Buyer Reviews</h2>
+                <p>Honest feedback from our tech community.</p>
+            </div>
+
+            <div class="reviews-grid">
+                
+                <article class="review-card">
+                    
+                    <h5>Flawless iPhone 16!</h5>                   
+                    <p><q>Unit looks 100% brand new, zero scratches, battery health is literally at peak 100%. Super legit seller dito sa Calamba!</q></p>                  
+                    <cite>— Mark R., Tech Enthusiast</cite>
+                </article>
+
+                <article class="review-card">
+                    <h5>Super Fast Shipping</h5>
+                    <p><q>Ordered yesterday and received today via courier with complete tracking. Packaged with care and thick bubble wrap.</q></p>
+                    <cite>— Sarah L., Verified Buyer</cite>
+                </article>
+
+               
+                <article class="review-card figure-card">
+                    <figure>
+                        <img src="Images/IPHONE16.png" alt="Unboxed iPhone Set" class="review-fig-img">
+                        <figcaption>Fig. 1.2 — Unboxed iPhone 16 unit with warranty card and sealed accessories.</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        
         <section class="ad-slideshow">
             <div class="slideshow-container">
                 <div class="slides-track">
@@ -111,38 +371,46 @@
                     <img src="Images/slide2.png" class="slide" alt="Promo 2">
                     <img src="Images/slide3.png" class="slide" alt="Promo 3">
                 </div>
-            </div>
+                <div class="slideshow-dots" id="slideshowDots"></div>
             </div>
         </section>
 
-        <section class="why-us">
-            <h2>Why Choose Banana</h2>
-            <div class="badges-grid">
-                <div class="badge">
+       
+        <section class="why-us" id="why-us">
+            <div class="section-header">
+                <h2>Why Choose Banana</h2>
+                <p>Straightforward service with zero hidden catches.</p>
+            </div>
+            <ul class="badges-grid">
+                <li class="badge">
                     <div class="badge-icon">✅</div>
                     <h4>100% Authentic</h4>
                     <p>Every unit checked and verified before it ships out.</p>
-                </div>
-                <div class="badge">
+                </li>
+                <li class="badge">
                     <div class="badge-icon">🔓</div>
                     <h4>Fully Unlocked</h4>
-                    <p>Works with any carrier, no strings attached.</p>
-                </div>
-                <div class="badge">
+                    <p>Works with any SIM carrier, no strings attached.</p>
+                </li>
+                <li class="badge">
                     <div class="badge-icon">🚚</div>
                     <h4>Fast Shipping</h4>
                     <p>Nationwide delivery, tracked from our door to yours.</p>
-                </div>
-                <div class="badge">
+                </li>
+                <li class="badge">
                     <div class="badge-icon">🛡️</div>
                     <h4>Warranty Included</h4>
-                    <p>Every phone comes with a service warranty.</p>
-                </div>
-            </div>
+                    <p>Every phone comes with an included service warranty.</p>
+                </li>
+            </ul>
         </section>
 
-        <section class="faq">
-            <h2>Frequently Asked Questions</h2>
+       
+        <section class="faq" id="faq">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Got questions? We've got quick answers.</p>
+            </div>
             <div class="faq-list">
 
                 <div class="faq-item">
@@ -151,7 +419,7 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes every unit we sell is factory or carrier unlocked, so it works with any SIM.</p>
+                        <p>Yes! Every unit we sell is factory or carrier unlocked, so it works with Smart, Globe, DITO, or international SIMs.</p>
                     </div>
                 </div>
 
@@ -161,7 +429,7 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>All units come with a standard service warranty. Reach out through Support for details on your specific model.</p>
+                        <p>All units come with a standard replacement and service warranty. Feel free to contact us anytime for support.</p>
                     </div>
                 </div>
 
@@ -171,7 +439,7 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>We accept GCash, Maya, bank transfer, and cash on delivery for select areas.</p>
+                        <p>We accept GCash, Maya, Bank Transfer (BDO, BPI), and Cash on Delivery (COD) for select service areas.</p>
                     </div>
                 </div>
 
@@ -181,16 +449,17 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Most orders ship within 1-2 business days, with tracking sent straight to your email.</p>
+                        <p>Most orders ship within 1-2 business days with an active tracking number sent to your email.</p>
                     </div>
                 </div>
 
             </div>
         </section>
 
+        
         <section class="newsletter">
             <h2>Stay in the Loop</h2>
-            <p>Get notified about new stock, drops, and sales.</p>
+            <p>Get instant alerts about newly dropped units and seasonal flash sales.</p>
             <form class="newsletter-form" id="newsletterForm">
                 <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
                 <button type="submit">Subscribe</button>
@@ -198,40 +467,70 @@
             <p class="newsletter-msg" id="newsletterMsg"></p>
         </section>
 
+        
+        <div class="pdf-modal-backdrop" id="pdfModal">
+            <div class="pdf-modal-content">
+                <div class="pdf-modal-header">
+                    <h3>📄 Official Banana Warranty Policy & Catalog (FINALOS.pdf)</h3>
+                    <button type="button" class="pdf-close-btn" id="closePdfBtn">&times;</button>
+                </div>
+                <div class="pdf-modal-body">
+                 
+                    <iframe src="pdf/FINALOS.pdf" class="pdf-frame" title="FINALOS PDF Viewer"></iframe>
+                </div>
+                <div class="pdf-modal-footer">
+                    <a href="pdf/FINALOS.pdf" target="_blank" class="btn-primary" download>Download FINALOS.pdf</a>
+                </div>
+            </div>
+        </div>
+
+      
         <footer class="site-footer">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="logo">
-                        <ruby> Banana
-                            <rt>バナナ</rt>
-                        </ruby>
-                    </div>
-                    <p>Great phones, ripe for the picking.</p>
+                    <ruby class="banana-logo" style="color: #ffffff;"> Banana
+                        <rt style="color: #8c887b;">バナナ</rt>
+                    </ruby>
+                    <p style="margin-top: 10px;">Great phones, ripe for the picking.</p>
+                   
+                    <a href="#top" class="back-to-top">↑ Back to Top</a>
                 </div>
 
                 <div class="footer-col">
-                    <h4>Shop</h4>
-                    <a href="#">Orders</a>
-                    <a href="#">Accessories</a>
-                    <a href="#">Support</a>
+                    <h4>Navigation</h4>
+                    <a href="#products">Phones</a>
+                    <a href="#calculator">Order Calculator</a>
+                    <a href="#compare">Specifications</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#faq">FAQ</a>
                 </div>
 
                 <div class="footer-col">
-                    <h4>Contact</h4>
+                    <h4>Visit Our Hub</h4>
                     <a href="mailto:kzyrus298@gmail.com">kzyrus298@gmail.com</a>
                     <p>Calamba, Laguna, Philippines</p>
+                    <iframe
+                        class="footer-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.9!2d121.165!3d14.211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2zMTTCsDEyJzM5LjYiTiAxMjHCsDA5JzU0LjAiRQ!5e0!3m2!1sen!2sph"
+                        width="100%" 
+                        height="130" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="Banana Store Location - Calamba, Laguna">
+                    </iframe>
                 </div>
 
                 <div class="footer-col">
                     <h4>Follow Us</h4>
                     <div class="social-links">
                         <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
                                 <path d="M22 12a10 10 0 1 0-11.6 9.87v-6.98H7.9V12h2.5V9.8c0-2.48 1.48-3.85 3.74-3.85 1.08 0 2.21.2 2.21.2v2.43h-1.25c-1.23 0-1.61.76-1.61 1.55V12h2.75l-.44 2.89h-2.31v6.98A10 10 0 0 0 22 12z"/>
                             </svg>
                         </a>
                         <a href="https://www.instagram.com/karlzen__/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
                                 <path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77.55-.55 1.11-.9 1.77-1.15.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.28 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.4-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/>
                             </svg>
                         </a>
@@ -239,9 +538,12 @@
                 </div>
             </div>
 
+            
             <div class="footer-bottom">
-                <p>&copy; 2026 Banana. All rights reserved.</p>
+                <h6>Banana Certified Reseller &bull; All Rights Reserved &bull; &copy; 2026</h6>
             </div>
+           
+            <div id="bottom"></div>
         </footer>
 
         <audio id="bgMusic" loop>
